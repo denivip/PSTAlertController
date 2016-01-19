@@ -56,6 +56,10 @@
 
 @implementation PSTExtendedAlertController
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     if (self.viewWillDisappearBlock) self.viewWillDisappearBlock();
